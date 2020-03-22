@@ -4,8 +4,8 @@
 
 	บริการ API สำหรับแปลง Java Object เป็น XML และแปลง XML เป็น Java Object 
 
-	__JAXB Marshalling__ : แปลง Java Object เป็น XML
+	***JAXB Marshalling*** : แปลง Java Object เป็น XML
 
-	__JAXB Unmarhsalling__ : แปลง XML เป็น Java Object 
+	***JAXB Unmarhsalling*** : แปลง XML เป็น Java Object 
 	
 - __JAXB 2 Maven Plugin__
