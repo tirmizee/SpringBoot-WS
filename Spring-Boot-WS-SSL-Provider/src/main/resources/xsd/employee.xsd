@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://tirmizee.com/employee" 
+	xmlns:tns="http://tirmizee.com/employee" elementFormDefault="qualified">
+ 
+  <xs:element name="GetEmployeeDetailsRequest">        <xs:complexType>
+        	<xs:sequence>
+        		<xs:element name="code" type="xs:string"></xs:element>
+        	</xs:sequence>
+        </xs:complexType>
+  </xs:element>
+    
+  <xs:element name="GetEmployeeDetailsResponse">  
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name= "Employee" type="tns:Employee"/>
+      </xs:sequence>  
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="Employee">
+    <xs:sequence>
+    	<xs:element name="id" type="xs:int" />
+    	<xs:element name="code" type="xs:string" />
+    	<xs:element name="citizentId" type="xs:string" />
+    	<xs:element name="firstName" type="xs:string"></xs:element>
+        <xs:element name="lastName" type="xs:string"></xs:element>
+        <xs:element name="status" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:element name="GetEmployeeStatusRequest">
+        <xs:complexType>
+        	<xs:sequence>
+        		<xs:element name="code" type="xs:string"></xs:element>
+        	</xs:sequence>
+        </xs:complexType>
+  </xs:element>
+
+    <xs:element name="GetEmployeeStatusResponse">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name="code" type="xs:string"></xs:element>
+    			<xs:element name="statusDetail" type="tns:Status"></xs:element>
+    		</xs:sequence>
+    	</xs:complexType></xs:element>
+
+    <xs:complexType name="Status">
+    	<xs:sequence>
+    		<xs:element name="status" type="xs:string"></xs:element>
+    		<xs:element name="description" type="xs:string"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>
