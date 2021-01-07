@@ -12,3 +12,4 @@ __
 ### Reference
 
 - http://www.mojohaus.org/jaxb2-maven-plugin/Documentation/v2.2/example_xjc_basic.html
+- https://github.com/anderuraga/spring-boot-soap-security
