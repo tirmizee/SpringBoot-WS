@@ -13,3 +13,4 @@ __
 
 - http://www.mojohaus.org/jaxb2-maven-plugin/Documentation/v2.2/example_xjc_basic.html
 - https://github.com/anderuraga/spring-boot-soap-security
+- https://tutorialflix.com/How-to-implement-security-in-SOAP-webservice-using-Spring-WS/
